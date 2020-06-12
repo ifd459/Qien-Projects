@@ -12,9 +12,27 @@ public class MasterMethod {
 //run through the game: generate code, get user input, compare the two and give a result
 	static void singleLoopGamePlay() {
 		boolean gameNotWon = true;
+//		boolean usedInvalidLetters;
 		char[] code = MastermindService.generateCode();
+		String userGuess;
+		
+		
+//		run method to check for invalid letters
 		while (gameNotWon) {
-			gameNotWon = MastermindService.compareGuess(code, MastermindService.userGuess());
+			userGuess = MastermindService.userGuess();
+			if (userGuess.contains("q")) {
+				System.out.println("Doei!");
+				System.exit(0);
+			} else if (userGuess.length() != 4) {
+				System.out.println("Geef de geldige hoeveelheid nummers.");
+				continue;
+				} else if (
+				MastermindService.checkForValidLetters(userGuess)) {
+					System.out.println("Geef alleen geldige letters.");
+				}
+			else {
+				gameNotWon = MastermindService.compareGuess(code, userGuess);
+			}
 		}
 	}
 }
