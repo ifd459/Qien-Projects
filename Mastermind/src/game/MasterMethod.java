@@ -12,7 +12,7 @@ public class MasterMethod {
 //run through the game: generate code, get user input, compare the two and give a result
 	static void singleLoopGamePlay() {
 		boolean gameNotWon = true;
-//		boolean usedInvalidLetters;
+//		boolean usedInvalidLetters; NOT MEANT TOO BE HERE SORRY
 		char[] code = MastermindService.generateCode();
 		String userGuess;
 		
