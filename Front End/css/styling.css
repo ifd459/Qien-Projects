@@ -69,6 +69,14 @@ section {
     margin: auto;
 }
 
+.containerhtml {
+    max-width: 1400px;
+    padding: 0 40px;
+    margin: 0;
+}
+
+
+
 .section-header-wrapper {
     max-width: 720px;
 }
@@ -79,6 +87,12 @@ section {
     flex-direction: row;
     align-items: center;
     max-height: 80vh;
+}
+
+footer {
+    background-color: #a480cf;
+    color: #ffffff;
+    padding: 20px;
 }
 
 .header-text-wrapper {
@@ -156,6 +170,20 @@ h4 {
     padding-left: 40px;
 }
 
+h5 {
+    font-size: 50px;
+    line-height: 200px;
+    margin-bottom: 0px;
+    color: #2d3047;
+    padding-left: 40px;
+    background-color: #93b7be;
+}
+
+.header-tables {
+    padding-left: 100px;
+   font-size: 100px;
+}
+
 p {
     font-size: 18px;
     margin-bottom: 20px;
@@ -188,8 +216,8 @@ button:hover {
 }
 
 .button-3 {
-background: seagreen;
-color: sienna;
+    background: #588b8b;
+    color: white;
 }
 
 
@@ -219,7 +247,6 @@ color: sienna;
 }
 
 .homepage-link {
-
     padding-left: 20px;
 }
 
@@ -236,4 +263,61 @@ color: sienna;
     content:"";
     display: table;
     clear: both;
+}
+
+table {
+    max-width: 1400px;
+    padding: 0 40px;
+    margin: auto;
+    padding-bottom: 200px;
+    padding-right: 300px;
+    text-align: center;
+    border: ;
+}
+
+th {
+    padding: 20px 70px;
+    background-color: #f28f3b;
+
+}
+td {
+border: 2px #ffd5c2 solid;
+}
+
+form{
+    display: inline;
+}
+
+.table-paragraph {
+    color: #ffd5c2;
+    padding-left: 80px;
+    padding-top: 30px;
+}
+
+/* 
+tbale - font text align lef
+
+th font size padding, background colour
+
+td: border thickness 4px colour solid
+padding 1st number is top bottom second is sides
+*/
+
+.t-header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    color: #93b7be;
+    background-color: #2d3047;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 20px;
+}
+
+.tablep2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 80px;
+    font-size: 50px;
+    color: #c8553d;
 }
