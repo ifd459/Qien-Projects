@@ -1,0 +1,83 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+function functionjojo() {
+    console.log("start functie");
+    document.getElementById("jojo").innerHTML = "Hello World";
+}
+
+function functionsweets() {
+    alert("je hebt de waarde verandert");
+    document.getElementById("selected-sweets").innerHTML = "Je hebt nu een " + document.getElementById("sweets").value;
+}
+  
+
+function functionnana() {
+        alert("nana buttom doet het");
+        document.getElementById("nana").innerHTML = "banananana";
+    }
+
+function functiewiebenik() {
+let naam = document.getElementById("input-naam").value;
+let leeftijd = document.getElementById("input-leeftijd").value;
+let woonplaats = document.getElementById("input-woonplaats").value;
+document.getElementById("naam").innerHTML = naam;
+document.getElementById("leeftijd").innerHTML = leeftijd;
+document.getElementById("woonplaats").innerHTML = woonplaats;
+}
+
+
+
+
+  </script>
+
+</head>
+
+<body>
+    <h1> Les javascript
+
+    </h1>
+    <h2>Print a simple line</h2>
+    <p id="jojo">Goedenmorgen</p>
+
+    <button onclick="functionjojo()">Try it</button>
+
+    <h2>Pick your candy from the candymachine</h2>
+    <p>select candy</p>
+
+    <select id="sweets" onchange="functionsweets()">
+<option value ="snicker">Snickers</option>
+<option value ="bounty">bounty</option>
+<option value ="mars">Mars</option>
+    </select>
+
+    <p id="selected-sweets"></p>
+
+
+<h2>Print inside a line</h2>
+<p>Ik wil <span id="nana">dit woord</span>  veranderen naar iets anders</p>
+<button onclick="functionnana()">change it</button>
+
+<h2>Wie ben jij?</h2>
+<label>Naam</label>
+<input type="text" id="input-naam" onchange="functiewiebenik()">
+<label>Leeftijd</label>
+<input type="number" id="input-leeftijd" onchange="functiewiebenik()">
+<label>Woonplaats</label>
+<input type="text" id="input-woonplaats" onchange="functiewiebenik()">
+<p>
+Jouw naam is <span id="naam"></span> <br>
+Jouw leeftijd is <span id="leeftijd"></span> <br>
+Jouw woonplaats is <span id="woonplaats"></span> <br>
+
+</p>
+
+
+</body>
+
+</html>
