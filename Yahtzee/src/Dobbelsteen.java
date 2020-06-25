@@ -11,5 +11,8 @@ public class Dobbelsteen {
 		randomNumber++;
 		return randomNumber;
 	}
+	public int getNumber() {
+		return currentNumber;
+	}
 
 }
