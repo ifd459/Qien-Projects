@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
 public class CheckInput {
+
+	// method checks user input for which die to roll again later
 	int[] vasthouden() {
 		// get input of die to keep
 
@@ -11,9 +13,7 @@ public class CheckInput {
 		return dieToKeep;
 	}
 
-//	method takes user's die to keep as int
-// checks String with five ugly if statements for each number - if there 1 if not 0
-
+	// method checks user input and creates blocking array
 	int[] intToBinaryArray(String userChoice) {
 		int[] keepArray = new int[5];
 
@@ -44,18 +44,11 @@ public class CheckInput {
 			keepArray[4] = 0;
 		}
 		if (userChoice.contains("12345")) {
-			System.out.println("cocky much?");
+			System.out.println("Cocky much? There's no yahtzee here...");
+		} else if (userChoice.contains("q")) {
+			System.exit(0);
 		}
-//		System.out.println("check vasthouden:");
-//		for (int i = 0 ; i < keepArray.length; i ++) {
-//			System.out.print(keepArray[i]);
-//		}
-//		System.out.println(" ");
 		return keepArray;
 	}
-	
-	
 
 }
-
-

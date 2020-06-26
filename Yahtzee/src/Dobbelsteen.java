@@ -1,9 +1,10 @@
 import java.util.Random;
 
 public class Dobbelsteen {
-//save the current number to the die
+	// set up variable for die number
 	int currentNumber = 0;
 
+	// method to assign random number 1-6
 	public int werpen() {
 		Random rd = new Random();
 		int randomNumber = 0;
@@ -11,6 +12,8 @@ public class Dobbelsteen {
 		randomNumber++;
 		return randomNumber;
 	}
+
+	// method to return number on die
 	public int getNumber() {
 		return currentNumber;
 	}
