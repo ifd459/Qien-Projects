@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Worp {
 
-int[] printWorpUitslag(ArrayList<Dobbelsteen> stenen) {
+int[] worpUitslag(ArrayList<Dobbelsteen> stenen) {
 	int[] worpUitslag = new int [5];
 
 	for (int i = 0; i < worpUitslag.length; i++) {
